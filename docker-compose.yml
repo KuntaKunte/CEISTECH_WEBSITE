@@ -3,11 +3,10 @@ version: '3.8'
 services:
   ceistech:
     build: .
-    # Default mapping uses host port 3002 -> container PORT 3002.
-    # Override by setting the PORT env variable before running compose, e.g. PORT=8080 docker-compose up --build
+    # Map host port to container port using the PORT environment variable (defaults to 3002)
     ports:
-      - "3002:3002"
+      - "${PORT:-3002}:${PORT:-3002}"
     environment:
       - NODE_ENV=production
-      - PORT=3002
+      - PORT=${PORT:-3002}
     restart: unless-stopped
