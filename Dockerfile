@@ -26,11 +26,14 @@ RUN npm install -g serve
 # Copy built files from builder stage
 COPY --from=builder /app/dist ./dist
 
+# Default port (can be overridden at runtime)
+ENV PORT=3002
+
 # Expose port
-EXPOSE 3000
+EXPOSE 3002
 
 # Set environment to production
 ENV NODE_ENV=production
 
-# Start the application
-CMD ["serve", "-s", "dist", "-l", "3000"]
+# Start the application using the configured PORT
+CMD ["sh", "-c", "serve -s dist -l $PORT"]
