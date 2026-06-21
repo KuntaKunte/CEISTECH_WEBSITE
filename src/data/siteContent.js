@@ -25,6 +25,10 @@ export const serviceCards = [
     description: 'Remote monitoring of equipment, facilities and industrial assets.',
   },
   {
+    title: 'Smart Home Automation',
+    description: 'Integrated automation for building controls, energy efficiency and connected environments.',
+  },
+  {
     title: 'Custom Software Development',
     description: 'Web applications, dashboards, APIs and enterprise software.',
   },

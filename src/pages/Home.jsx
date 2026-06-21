@@ -23,12 +23,7 @@ export default function Home() {
               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200">
                 Industrial IoT, Computer Vision, AI and Digital Transformation Solutions for Modern Businesses.
               </p>
-              <div className="mt-10 flex flex-wrap gap-4">
-                <Link to="/solutions" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-7 py-3 text-sm font-semibold text-white transition hover:border-cyan hover:text-cyan">
-                  Explore Solutions
-                  <ArrowRight className="h-4 w-4" />
-                </Link>
-              </div>
+
             </motion.div>
 
             <motion.div initial={{ opacity: 0, x: 32 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.7 }} className="relative isolate rounded-[2rem] border border-white/10 bg-slate-950/70 p-10 shadow-2xl shadow-slate-950/40">

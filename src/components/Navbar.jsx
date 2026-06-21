@@ -13,13 +13,15 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-40 border-b border-slate-300/10 bg-navy/95 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 sm:px-8">
-        <Link to="/" className="flex items-center gap-3 text-white">
-          <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-electric text-navy shadow-lg shadow-electric/20">
-            <ChevronRight className="h-5 w-5" />
-          </div>
+        <Link to="/" className="flex items-center gap-4 text-white">
+          <img
+            src="/Logo_Company.JPG"
+            alt="CEIS logo"
+            className="h-14 w-auto max-w-[10rem] rounded-lg object-contain"
+          />
           <div>
-            <p className="text-sm uppercase tracking-[0.3em]">CEIS</p>
-            <p className="text-base font-semibold">Industrial IoT & AI</p>
+            <p className="text-sm uppercase tracking-[0.3em]">Engineering</p>
+            <p className="text-base font-semibold">Innovations</p>
           </div>
         </Link>
 
